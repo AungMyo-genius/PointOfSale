@@ -1,0 +1,20 @@
+@page "/reports"
+
+<h2>Report System Catalog</h2>
+<p>Use these reports to monitor sales, inventory, customers, employees, and financial health.</p>
+
+@foreach (var group in ReportCatalog.Definitions.GroupBy(definition => definition.Category))
+{
+    <h3 class="section-title">@group.Key</h3>
+    <div class="report-list">
+        @foreach (var report in group)
+        {
+            <div class="report-item">
+                <h4>@report.Name</h4>
+                <p><strong>Purpose:</strong> @report.Purpose</p>
+                <p><strong>Key metrics:</strong> @report.KeyMetrics</p>
+                <p><strong>Frequency:</strong> @report.Frequency</p>
+            </div>
+        }
+    </div>
+}

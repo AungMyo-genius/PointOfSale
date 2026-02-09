@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             x:Class="PointOfSale.App.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#1F4ACC</Color>
+            <Color x:Key="Secondary">#00A886</Color>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#1F2937" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
